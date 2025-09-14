@@ -81,7 +81,7 @@ body {
   background-color: var(--site-color);
   margin-right: 10px;
   content: "";
-  transition: width .1s ease;
+  transition: width .2s ease;
 }
 
 .lined-link:hover::before {
