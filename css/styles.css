@@ -61,6 +61,33 @@ body {
   opacity: .6;
 }
 
+/* LINED-LINK */
+
+.lined-link {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--site-color);
+  display: flex;
+  align-items: center;
+}
+
+.lined-link::before {
+  width: 40px;
+  height: 3px;
+  background-color: var(--site-color);
+  margin-right: 10px;
+  content: "";
+  transition: width .1s ease;
+}
+
+.lined-link:hover::before {
+  width: 60px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -170,6 +197,54 @@ img {
   border-left: 3px solid #888;
   color: var(--site-mini-info-color);
   margin-bottom: 30px;
+}
+
+/* FEATURES */
+
+.site-features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.features-item {
+  width: 100%;
+  max-width: 280px;
+}
+.features-item:not(:last-child) {
+  margin-right: 120px;
+}
+.features-item-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #222;
+}
+.features-item-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: var(--info-color);
+}
+.features-item-divider {
+  margin: 0;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  border: none;
+  background-color: #ddd;
+  box-shadow: 18px 0px 0px 0px #ddd ,
+  36px 0px 0px 0px #ddd;
 }
 
 /* RETINA BGS */
