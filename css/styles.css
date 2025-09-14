@@ -41,6 +41,7 @@ body {
 }
 
 .button {
+  min-width: 160px;
   display: inline-block;
   background-color: var(--site-color);
   color: #fff;
@@ -71,7 +72,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--site-color);
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -247,6 +248,50 @@ img {
   36px 0px 0px 0px #ddd;
 }
 
+/* PROMO */
+
+.site-promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* RUNNERS */
+
+.site-runners {
+  background-image: url("../images/footer-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.runners-container {
+  padding-top: 240px;
+  padding-bottom: 240px;
+}
+
+.runners-lead-cta {
+  margin-left: auto;
+}
+
+.runners-lead-cta .lead-cta-heading {
+  color: #fff;
+}
+.runners-lead-cta .lead-cta-text {
+  border-color: #fff;
+  color: #fff;
+}
+
 /* RETINA BGS */
 
 @media
@@ -258,5 +303,8 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .site-hero {
     background-image: url("../images/apple-watch@2x.jpg");
+  }
+  .runners-container {
+    background-image: url("../images/footer-image@2x.jpg");
   }
 }
